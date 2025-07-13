@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WordSlasher</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Sticky Nav: appears after scroll -->
+  <header id="top-nav" class="top-nav bg-white shadow sticky top-0 z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="nav-container max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">🌟 WordSlasher</h1>
+      <nav class="top-links space-x-4">
+        <a href="app.html" class="text-gray-700 hover:text-blue-600">Campaign</a>
+        <a href="rewards.html" class="text-gray-700 hover:text-blue-600">Rewards</a>
+        <a href="fund.html" class="text-gray-700 hover:text-blue-600">Fund</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Wrapper for Sidebar + Content -->
+  <div class="flex">
+
+    <!-- Floating Left Sidebar -->
+   <aside id="side-nav" class="sidebar hidden md:block">
+    <nav class="flex flex-col space-y-1 text-sm">
+        <a href="#our-story">Our Story</a>
+        <a href="#learn-by-playing">Learn by Playing</a>
+        <a href="#what-makes-us-different">What Makes WordSlasher Different?</a>
+        <a href="#why-crowdfunding">Why We’re Crowdfunding</a>
+        <a href="#rewards">Rewards</a>
+        <a href="#vision">Our Vision</a>
+        <a href="#try-demo">Try the Demo</a>
+        <a href="#help-us">Help Us Build</a>
+    </nav>
+    </aside>
+
+<section
+  id="hero"
+  class="relative min-h-[90vh] flex items-center justify-center px-6 py-24 text-center overflow-hidden bg-white"
+  aria-label="Hero section introducing WordSlasher language learning app"
+>
+  <!-- Content wrapper -->
+  <div
+    class="relative max-w-6xl mx-auto space-y-14 px-4 sm:px-6 lg:px-8 text-gray-900"
+  >
+    <!-- Title -->
+    <h1 class="text-4xl font-bold text-primary">
+      WordSlasher
+    </h1>
+
+    <!-- Subtitle / Tagline -->
+    <p
+      class="max-w-2xl mx-auto text-lg sm:text-xl text-gray-700 font-light tracking-wide"
+    >
+      Slice through words and master new languages with fun mini-games in Arabic,
+      Spanish, and Japanese.
+    </p>
+
+    <!-- Video -->
+    <div
+      class="mx-auto max-w-5xl rounded-2xl overflow-hidden shadow-2xl ring-2 ring-gray-200 hover:scale-[1.02] transition-transform duration-500"
+      role="region"
+      aria-label="Demo video of WordSlasher app"
+    >
+      <iframe
+        class="w-full aspect-video"
+        src="https://www.youtube.com/embed/FUGt_7fT4B0"
+        title="WordSlasher Demo Video"
+        allowfullscreen
+        loading="lazy"
+        frameborder="0"
+      ></iframe>
+    </div>
+
+    <!-- Stats & Buttons -->
+    <div
+      class="flex flex-col md:flex-row items-center justify-between gap-10 max-w-5xl mx-auto bg-black/50 rounded-3xl p-8 shadow-xl backdrop-blur-sm"
+      role="region"
+      aria-label="Crowdfunding stats and action buttons"
+    >
+
+        <!-- Progress Bar -->
+        <div
+          class="w-full h-5 bg-gray-800 rounded-full mt-6 overflow-hidden shadow-inner"
+          role="progressbar"
+          aria-valuenow="100"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-label="Funding progress"
+        >
+          <div
+            style="width: 100%"
+            class="h-full bg-green-400 rounded-full transition-all duration-700 ease-in-out"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Main Content -->
+<main class="max-w-4xl mx-auto p-6 space-y-10">
+
+  <section id="our-story">
+    <h2 class="text-2xl font-bold mb-4">🌟 WordSlasher – Our Story</h2>
+    <p>Hi! We’re a passionate team of developers and language lovers on a mission to make learning fun, free, and accessible to everyone.</p>
+    <p>We’re building WordSlasher, an educational app that combines mini-games with real language learning — currently supporting Arabic, Spanish, and Japanese.</p>
+  </section>
+
+  <section id="learn-by-playing">
+    <h2 class="text-2xl font-bold mb-4">🎮 Learn by Playing</h2>
+    <p>Imagine slicing through words like Fruit Ninja — but instead of fruit, you're learning vocabulary, sentence-building, and pronunciation better and faster than Duolingo.</p>
+    <p>No ads. No paywalls. No pressure.<br>Just joyful learning through immersive gameplay.</p>
+  </section>
+
+  <section id="what-makes-us-different">
+    <h2 class="text-2xl font-bold mb-4">🌱 What Makes WordSlasher Different?</h2>
+    <p>While big apps focus on streaks and gamified repetition, we’re focused on real comprehension — with beautiful design, cultural context, and games that make learning feel natural and exciting.</p>
+    <p>And we’re making the full demo 100% free, because we believe education should never be locked behind a paywall.</p>
+  </section>
+
+  <section id="why-crowdfunding">
+    <h2 class="text-2xl font-bold mb-4">💡 Why We’re Crowdfunding</h2>
+    <p>We’ve already built the demo. Now we need your help to finish the job:</p>
+    <ul class="list-disc list-inside space-y-1">
+      <li>💻 Polish and complete the full app</li>
+      <li>🧾 Cover basic living costs while we focus on development</li>
+      <li>🌍 Translate and expand into more languages, content, categories, books, worksheets & audio guides</li>
+    </ul>
+  </section>
+
+  <section id="rewards">
+    <h2 class="text-2xl font-bold mb-4">🎁 What You Get</h2>
+    <p>We're not selling the app — it'll always be free.</p>
+    <p>Your support helps us:</p>
+    <ul class="list-disc list-inside space-y-1">
+      <li>Keep development alive and independent</li>
+      <li>Put powerful learning tools in the hands of learners worldwide</li>
+      <li>Build something lasting and meaningful</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-6">❤️ All Backers Get:</h3>
+    <ul class="list-disc list-inside space-y-1">
+      <li>Your name/handle in the credits</li>
+      <li>Early access to updates and new content</li>
+      <li>Provide feedback and bug fixes</li>
+    </ul>
+
+    <h3 class="text-xl font-semibold mt-6">❤️❤️ Big Backer Rewards:</h3>
+    <ul class="list-disc list-inside space-y-1">
+      <li>Feedback to make changes, fixes and improvements to the initial design.</li>
+      <li>Suggest upgrades or additional languages you'd love to see included — we’ll prioritize your request!</li>
+    </ul>
+  </section>
+
+  <section id="vision">
+    <h2 class="text-2xl font-bold mb-4">🌍 Our Vision</h2>
+    <p>If this campaign succeeds, we’ll grow WordSlasher into:</p>
+    <ul class="list-disc list-inside space-y-1">
+      <li>A multilingual platform for underrepresented languages</li>
+      <li>A series of educational tools (books, audio, worksheets)</li>
+      <li>A global community of learners who help each other thrive</li>
+    </ul>
+  </section>
+
+  <section id="try-demo">
+    <h2 class="text-2xl font-bold mb-4">🕹️ Try the Demo Ideas – Free, Right Now</h2>
+    <p>We’ve built a working prototype you can try today:</p>
+    <p><a href="https://github.com/abderoofyt/Mobile-Games" target="_blank" rel="noopener" class="text-blue-600 hover:underline">👉 https://github.com/abderoofyt/Mobile-Games</a></p>
+  </section>
+
+  <section id="help-us">
+    <h2 class="text-2xl font-bold mb-4">🙌 Help Us Build a World of Learning</h2>
+    <p>We believe language breaks barriers — and that games can make that learning joyful for everyone, everywhere.</p>
+    <p>If you’re in a place to donate — even a little goes a long way.<br>
+    If you can’t give, please share the project, try the demo, or send us feedback.</p>
+    <p>Together, we can build something truly amazing.</p>
+    <p>Let’s make learning fun again. Let’s build WordSlasher.</p>
+  </section>
+
+</main>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-6 border-t mt-10">
+    <p>© 2025 WordSlasher Team — Built with ❤️ for learners worldwide.</p>
+  </footer>
+
+  <!-- Load Scripts Last -->
+  <script src="script.js"></script>
+</body>
+</html>
